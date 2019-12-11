@@ -56,10 +56,10 @@ class Figure{
     this.modFreqY = floor(map(this.genes[4], 0, 1, 1, 20)); //1, 20
 
     // //COLOR:
-    // this.rr = floor(map(this.genes[5], 0, 1, 20, 200));
-    // this.gg = floor(map(this.genes[6], 0, 1, 20, 200));
-    // this.bb = floor(map(this.genes[7], 0, 1, 20, 200));
-    // this.myalpha = floor(map(this.genes[8], 0, 1, 150, 255)); // 0 alpha = completelly translucent
+    this.rr = floor(map(this.genes[5], 0, 1, 20, 200));
+    this.gg = floor(map(this.genes[6], 0, 1, 20, 200));
+    this.bb = floor(map(this.genes[7], 0, 1, 20, 200));
+    this.myalpha = floor(map(this.genes[8], 0, 1, 150, 255)); // 0 alpha = completelly translucent
 
     // this.mycolor = color(this.rr, this.gg, this.bb, this.myalpha); THIS IS WRONG
 
@@ -161,9 +161,9 @@ class Figure{
     		var d = this.lissajousPoints[i1].dist(this.lissajousPoints[i2]);
     		var a = pow(1 / (d / this.connectionRadius + 1), 6);
     		if (d <= this.connectionRadius) {
-    			stroke(this.lineColor, a * this.lineAlpha); //stroke(this.mycolor, a * this.myalpha);
+    			//stroke(this.lineColor, a * this.lineAlpha); //stroke(this.mycolor, a * this.myalpha);
 
-          //stroke(this.rr,this.gg,this.bb, this.myalpha); //color
+          stroke(this.rr,this.gg,this.bb, this.myalpha); //color
           //stroke(this.lineColor, a * this.lineAlpha); //no color
 
     			line(
@@ -190,8 +190,8 @@ class Figure{
       var d = this.lissajousPoints[i1].dist(this.lissajousPoints[i2]);
       var a = pow(1 / (d / this.connectionRadius + 1), 6);
       if (d <= this.connectionRadius) {
-        stroke(this.lineColor, a * this.lineAlpha);
-        //stroke(this.rr,this.gg,this.bb, this.myalpha); //color
+        //stroke(this.lineColor, a * this.lineAlpha);
+        stroke(this.rr,this.gg,this.bb, this.myalpha); //color
         // stroke(this.lineColor, a * this.lineAlpha); //no color
 
         line(

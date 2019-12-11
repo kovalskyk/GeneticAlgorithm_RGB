@@ -257,7 +257,7 @@ function keyPressed(){
 function checkForReddirect(){
 
 	if (population.getGenerations() == reddirectAtGeneration && reddirectGenReached == false){
-		window.open("https://forms.gle/PgdoWLjuGFyKs1FW9");
+		window.open("https://forms.gle/5yxRHxMVhSTV8Kcq5");
 		reddirectGenReached = true;
 	}
 }
