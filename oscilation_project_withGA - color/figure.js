@@ -10,11 +10,11 @@ class Figure{
     // Using java.awt.Rectangle (see: http://java.sun.com/j2se/1.4.2/docs/api/java/awt/Rectangle.html)
     this.r = new Rectangle(this.x/3.3-120, this.y/3.2 - 150, 230, 230);
 
-    this.pointCount = 600; //vars that don't change 1000; 600
+    this.pointCount = 1000; //vars that don't change 1000; 600
     this.lissajousPoints = [];
     this.lineWeight = 0.1;
     this.lineAlpha = 50;
-    this.connectionRadius = 150; //100
+    this.connectionRadius = 100; //100
     // this.connectionRamp = 6;
     this.lineColor = color(0,50);
 
