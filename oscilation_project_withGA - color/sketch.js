@@ -31,7 +31,7 @@ function setup() {
 	colorMode(RGB, 255, 255, 255, 100); //colorMode(RGB, 1.0, 1.0, 1.0, 1.0);
 
 	let popmax = 10;
-	let mutationRate = 0.1; //0.05 // A pretty high mutation rate here, our population is rather small we need to enforce variety
+	let mutationRate = 0.05; //0.05 // A pretty high mutation rate here, our population is rather small we need to enforce variety
 	// Create a population with a target phrase, mutation rate, and population max
 
 	reddirectAtGeneration = 10;
